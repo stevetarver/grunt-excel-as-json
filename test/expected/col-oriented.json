@@ -1,0 +1,50 @@
+[
+  {
+    "firstName": "Jihad",
+    "lastName": "Saladin",
+    "address": {
+      "street": "12 Beaver Court",
+      "city": "Snowmass",
+      "state": "CO",
+      "zip": 81615
+    },
+    "phones": [
+      {
+        "type": "home",
+        "number": "123.456.7890"
+      },
+      {
+        "type": "work",
+        "number": "098.765.4321"
+      }
+    ],
+    "aliases": [
+      "stormagedden",
+      "bob"
+    ]
+  },
+  {
+    "firstName": "Marcus",
+    "lastName": "Rivapoli",
+    "address": {
+      "street": "16 Vail Rd",
+      "city": "Vail",
+      "state": "CO",
+      "zip": 81657
+    },
+    "phones": [
+      {
+        "type": "home",
+        "number": "123.456.7891"
+      },
+      {
+        "type": "work",
+        "number": "098.765.4322"
+      }
+    ],
+    "aliases": [
+      "mac",
+      "markie"
+    ]
+  }
+]

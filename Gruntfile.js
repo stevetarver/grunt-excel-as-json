@@ -1,6 +1,6 @@
 /*
  * grunt-excel-as-json
- * https://github.com/starver/grunt-excel-as-json
+ * https://github.com/steve.tarver/grunt-excel-as-json
  *
  * Copyright (c) 2015 Steve Tarver <steve.tarver@gmail.com>
  * Licensed under the MIT license.
@@ -29,22 +29,12 @@ module.exports = function(grunt) {
     },
 
     // Configuration to be run (and then tested).
-    excel_as_json: {
-      default_options: {
-        options: {
-        },
-        files: {
-          'tmp/default_options': ['test/fixtures/testing', 'test/fixtures/123']
-        }
-      },
-      custom_options: {
-        options: {
-          separator: ': ',
-          punctuation: ' !!!'
-        },
-        files: {
-          'tmp/custom_options': ['test/fixtures/testing', 'test/fixtures/123']
-        }
+    convertExcelToJson: {
+      dist: {
+        files: [
+          {src: 'test/fixtures/row-oriented.xlsx', dst: 'tmp/row-oriented.json'},
+          {src: 'test/fixtures/col-oriented.xlsx', dst: 'tmp/col-oriented.json', isColOriented: true}
+        ]
       }
     },
 
@@ -65,7 +55,7 @@ module.exports = function(grunt) {
 
   // Whenever the "test" task is run, first clean the "tmp" dir, then run this
   // plugin's task(s), then test the result.
-  grunt.registerTask('test', ['clean', 'excel_as_json', 'nodeunit']);
+  grunt.registerTask('test', ['clean', 'convertExcelToJson', 'nodeunit']);
 
   // By default, lint and run all tests.
   grunt.registerTask('default', ['jshint', 'test']);
