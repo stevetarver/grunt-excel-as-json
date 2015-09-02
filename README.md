@@ -11,7 +11,7 @@
 > Convert Excel files to JSON files
 
 ## Getting Started
-This plugin requires Grunt `~0.4.5` (soft requirement - previous versions of grunt have not been tested but should work).
+This plugin requires Grunt `~0.4.5` (soft requirement - task does not use any advanced Grunt features so any recent version should work but previous versions have not been tested).
 
 If you haven't used [Grunt](http://gruntjs.com/) before, be sure to check 
 out the [Getting Started](http://gruntjs.com/getting-started) guide, as it explains how to create a [Gruntfile](http://gruntjs.com/sample-gruntfile) 
@@ -71,8 +71,9 @@ Type: `String`
 Path to the JSON output file
 
 #### files.isColOriented
-Type: `Boolean`
+Type: `Boolean`  
 Default: `true`
+
 Indicates whether objects in this Excel file are stored as columns or rows
 
 
