@@ -14,12 +14,7 @@
   "bugs": {
     "url": "https://github.com/stevetarver/grunt-excel-as-json/issues"
   },
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "https://github.com/stevetarver/grunt-excel-as-json/blob/master/LICENSE-MIT"
-    }
-  ],
+  "license": "MIT",
   "engines": {
     "node": ">= 0.12.0"
   },
@@ -39,6 +34,11 @@
     "grunt": "~0.4.5"
   },
   "keywords": [
-    "gruntplugin"
+    "gruntplugin",
+    "grunt",
+    "Excel",
+    "JSON",
+    "convert",
+    "excel-as-json"
   ]
 }

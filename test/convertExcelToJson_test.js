@@ -22,7 +22,7 @@ var grunt = require('grunt');
     test.ifError(value)
 */
 
-exports.foo = {
+exports.convertExcelToJson = {
   files_generated: function(test) {
     test.expect(2);
 
