@@ -1,7 +1,7 @@
 {
   "name": "grunt-excel-as-json",
   "description": "Convert Excel files to JSON files",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "homepage": "https://github.com/stevetarver/grunt-excel-as-json",
   "author": {
     "name": "Steve Tarver",
@@ -22,7 +22,7 @@
     "test": "grunt test"
   },
   "dependencies": {
-    "excel-as-json": "1.0.1"
+    "excel-as-json": "1.0.3"
   },
   "devDependencies": {
     "grunt": "~1.0.1",
